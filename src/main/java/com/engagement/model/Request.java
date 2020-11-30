@@ -59,5 +59,8 @@ public class Request {
 	@CreationTimestamp
 	@JsonFormat(pattern = "yyyy-MM-dd")
 	private LocalDate dateCreated;
+	
+	//TODO add request date for intervention
+	private LocalDate interventionDate;
 
 }

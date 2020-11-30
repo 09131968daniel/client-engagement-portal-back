@@ -31,7 +31,6 @@ import com.engagement.service.RequestService;
 
 @ExtendWith(MockitoExtension.class)
 @WebMvcTest(RequestController.class)
-
 class RequestControllerTest {
 
 	@Autowired
@@ -48,11 +47,11 @@ class RequestControllerTest {
 //	LocalDate date = LocalDate.of(2020, 11, 25);
 
 	private Request testRequest0 = new Request(0, RequestTypes.INTERVENTION, Status.PENDING, "test comment", TestClient,
-			null);
+			null, null);
 
-	private Request testRequest1 = new Request(1, RequestTypes.TALENT, Status.DONE, "test comment2", TestClient, null);
+	private Request testRequest1 = new Request(1, RequestTypes.TALENT, Status.DONE, "test comment2", TestClient, null, null);
 
-	private RequestDto testRequest2DTO = new RequestDto(0, "TALENT", "DONE", "test comment2", "a@a.com");
+	private RequestDto testRequest2DTO = new RequestDto(0, "TALENT", "DONE", "test comment2", "a@a.com", null);
 
 	private String testRequestJson = "{\"requestId\":0, \"requestType\":\"TALENT\", \"status\":\"DONE\",\"message\":\"test comment2\",\"clientEmail\":\"a@a.com\"}";
 

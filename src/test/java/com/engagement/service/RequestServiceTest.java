@@ -38,13 +38,13 @@ class RequestServiceTest {
 	Client TestClient = new Client(1, "a@a.com", "revature", "5555555");
 
 	private Request testRequest0 = new Request(0, RequestTypes.INTERVENTION, Status.PENDING, "test comment", TestClient,
-			null);
+			null, null);
 
-	private RequestDto testRequest0DTO = new RequestDto(0, "INTERVENTION", "PENDING", "test comment", "a@a.com");
+	private RequestDto testRequest0DTO = new RequestDto(0, "INTERVENTION", "PENDING", "test comment", "a@a.com", null);
 
-	private Request testRequest1 = new Request(1, RequestTypes.TALENT, Status.DONE, "test comment2", TestClient, null);
+	private Request testRequest1 = new Request(1, RequestTypes.TALENT, Status.DONE, "test comment2", TestClient, null, null);
 
-	private RequestDto testRequest1DTO = new RequestDto(0, "TALENT", "DONE", "test comment2", "a@a.com");
+	private RequestDto testRequest1DTO = new RequestDto(0, "TALENT", "DONE", "test comment2", "a@a.com", null);
 
 	private List<Request> testRequests = new ArrayList<>();
 
